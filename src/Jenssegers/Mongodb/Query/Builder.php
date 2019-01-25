@@ -269,7 +269,7 @@ class Builder extends BaseBuilder
                 $result = $this->collection->distinct($column);
             }
 
-            return $result;
+            return $results['cursor']['firstBatch'];
         }
 
         // Normal query
